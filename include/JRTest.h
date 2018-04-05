@@ -1,10 +1,6 @@
 #ifndef JRTEST_H
 #define JRTEST_H
 
-#include <iostream>
-
-using namespace std;
-
 class JRTest
 {
 public:
@@ -24,11 +20,11 @@ public:
     */
     ~JRTest()
     {
-        cout << endl;
-        cout << "* * * SUMMARY * * *" << endl;
-        cout << test_failed << " Failed" << endl;
-        cout << test_passed << " Passed" << endl;
-        cout << test_counter << " Total Test's" << endl;
+        std::cout << std::endl;
+        std::cout << "* * * SUMMARY * * *" << std::endl;
+        std::cout << test_failed << " Failed" << std::endl;
+        std::cout << test_passed << " Passed" << std::endl;
+        std::cout << test_counter << " Total Test's" << std::endl;
     };
 
 
@@ -36,13 +32,13 @@ public:
         Test if variable T1 equals T2
     */
     template<class T1, class T2>
-    void equals(T1 a, T2 b)
+    void isequal(T1 a, T2 b)
     {
         test_counter++;
 
         if (a != b)
         {
-            cout << "Test no. '" << test_counter << "' failed" << endl;
+            std::cout << "Test no. '" << test_counter << "' failed" << std::endl;
             test_failed++;
         }
         else
@@ -61,7 +57,7 @@ public:
 
         if (a == b)
         {
-            cout << "Test no. '" << test_counter << "' failed" << endl;
+            std::cout << "Test no. '" << test_counter << "' failed" << std::endl;
             test_failed++;
         }
         else
@@ -79,7 +75,7 @@ public:
 
         if (!a)
         {
-            cout << "Test no. '" << test_counter << "' failed" << endl;
+            std::cout << "Test no. '" << test_counter << "' failed" << std::endl;
             test_failed++;
         }
         else
@@ -97,7 +93,7 @@ public:
 
         if (a)
         {
-            cout << "Test no. '" << test_counter << "' failed" << endl;
+            std::cout << "Test no. '" << test_counter << "' failed" << std::endl;
             test_failed++;
         }
         else

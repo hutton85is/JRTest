@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "JRTest.h"
 
 using namespace std;
@@ -8,22 +9,22 @@ int main()
     JRTest test;
 
     /**
-        Test 'equals' function
+        Test 'isequal' function
     */
     // test 1
-    test.equals(1,4);
+    test.isequal(1,4);
     // test 2
-    test.equals(2,2);
+    test.isequal(2,2);
     // test 3
-    test.equals("russell","russell");
+    test.isequal("russell","russell");
     // test 4
-    test.equals("russell","russ");
+    test.isequal("russell","russ");
     // test 5
-    test.equals('s','a');
+    test.isequal('s','a');
     // test 6
-    test.equals("a","a");
+    test.isequal("a","a");
     // test 7
-    test.equals('a','a');
+    test.isequal('a','a');
 
     /**
         Test 'notequals' function
@@ -44,6 +45,9 @@ int main()
     /**
         Test 'istrue' function
     */
+    string cmp1 ("mama");
+    string cmp2 ("papa");
+
     // test 14
     test.istrue(1);
     // test 15
@@ -51,7 +55,7 @@ int main()
     // test 16
     test.istrue('a' == 'a');
     //test 17
-    test.istrue("mama" == "papa");
+    test.istrue(cmp1.compare(cmp2));
 
     /**
         Test 'isfalse' function
@@ -63,7 +67,15 @@ int main()
     // test 20
     test.isfalse('a' == 'a');
     //test 21
-    test.isfalse("mama" == "papa");
+    test.isfalse(cmp1.compare(cmp2));
+
+    /**
+        Test 'isless' function
+    */
+
+    /**
+        Test 'isgreater' function
+    */
 
     return 0;
 }
