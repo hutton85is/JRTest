@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1522945268 source:c:\users\russell.tengi\desktop\jrtest\main.cpp
+	<iostream>
+	"JRTest.h"
+
+1522944163 source:c:\users\russell.tengi\desktop\jrtest\src\jrtest.cpp
+	"JRTest.h"
+
+1522944491 c:\users\russell.tengi\desktop\jrtest\include\jrtest.h
+	<iostream>
+
