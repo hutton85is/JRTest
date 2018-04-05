@@ -1,7 +1,9 @@
 # JRTest
 Test Class that is able to do unit tests in C++. 
+
 The program will display fails by their relative test number
-The program summarizes test fails, successes and total number
+
+The program summarizes test fails, successes and total number of test's to be displayed in console
 
 To run test class simply copy the 'JRTest.h' class file to a known path and include in your program
 
