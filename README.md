@@ -10,13 +10,17 @@ To run test class simply copy the 'JRTest.h' class file to a known path and incl
 Functions working now are:
 
   -void isequal(T1 a, T2 b)
+    
     compares variable 'a' and 'b'
     
   -void notequal(T1 a, T2 b)
+    
     compares if variable 'a' and 'b' are not equal
     
   -void istrue(bool a)
+    
     verifies if boolean variable 'a' is true
     
   -void isfalse(bool a)
+    
     verifies if boolean variable 'a' is false
