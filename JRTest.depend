@@ -16,3 +16,12 @@
 
 1522961164 /home/russell/CPP Programs/JRTest/include/JRTest.h
 
+1523024054 source:c:\users\russell.tengi\documents\github\jrtest\main.cpp
+	<iostream>
+	<string>
+	"JRTest.h"
+
+1523030320 c:\users\russell.tengi\documents\github\jrtest\include\jrtest.h
+	<fstream>
+	<sstream>
+

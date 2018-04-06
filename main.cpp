@@ -72,10 +72,29 @@ int main()
     /**
         Test 'isless' function
     */
+    // test 22
+    test.isless(1, 2);
+    // test 23
+    test.isless(2, 2);
+    // test 24
+    test.isless(-5, 2);
+    // test 25
+    test.isless(100, 2);
+
 
     /**
         Test 'isgreater' function
     */
+    // test 26
+    test.isgreater(1, 2);
+    // test 27
+    test.isgreater(2, 2);
+    // test 28
+    test.isgreater(-5, 2);
+    // test 29
+    test.isgreater(100, 2);
+    // test 30
+    test.isgreater(-50, -70);
 
     return 0;
 }
