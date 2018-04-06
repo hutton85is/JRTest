@@ -1,0 +1,20 @@
+Test no. '1' failed
+Test no. '4' failed
+Test no. '5' failed
+Test no. '8' failed
+Test no. '10' failed
+Test no. '13' failed
+Test no. '15' failed
+Test no. '18' failed
+Test no. '20' failed
+Test no. '21' failed
+Test no. '23' failed
+Test no. '25' failed
+Test no. '26' failed
+Test no. '27' failed
+Test no. '28' failed
+
+* * * SUMMARY * * *
+15 Failed
+15 Passed
+30 Total Test's

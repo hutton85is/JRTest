@@ -24,12 +24,16 @@ public:
     */
     ~JRTest()
     {
-        std::cout << std::endl;
-        std::cout << "* * * SUMMARY * * *" << std::endl;
-        std::cout << test_failed << " Failed" << std::endl;
-        std::cout << test_passed << " Passed" << std::endl;
-        std::cout << test_counter << " Total Test's" << std::endl;
-        //file.close();
+        outs << std::endl;
+        outs << "* * * SUMMARY * * *" << std::endl;
+        outs << test_failed << " Failed" << std::endl;
+        outs << test_passed << " Passed" << std::endl;
+        outs << test_counter << " Total Test's" << std::endl;
+
+        std::cout << outs.str();
+
+        file << outs.str();
+        file.close();
     };
 
 
@@ -43,8 +47,7 @@ public:
 
         if (a != b)
         {
-            std::cout << "Test no. '" << test_counter << "' failed" << std::endl;
-            //file << "Test no. '" << test_counter << "' failed" << std::endl;
+            outs << "Test no. '" << test_counter << "' failed" << std::endl;
             test_failed++;
         }
         else
@@ -63,8 +66,7 @@ public:
 
         if (a == b)
         {
-            std::cout << "Test no. '" << test_counter << "' failed" << std::endl;
-            //file << "Test no. '" << test_counter << "' failed" << std::endl;
+            outs << "Test no. '" << test_counter << "' failed" << std::endl;
             test_failed++;
         }
         else
@@ -82,8 +84,7 @@ public:
 
         if (!a)
         {
-            std::cout << "Test no. '" << test_counter << "' failed" << std::endl;
-            //file << "Test no. '" << test_counter << "' failed" << std::endl;
+            outs << "Test no. '" << test_counter << "' failed" << std::endl;
             test_failed++;
         }
         else
@@ -101,8 +102,7 @@ public:
 
         if (a)
         {
-            std::cout << "Test no. '" << test_counter << "' failed" << std::endl;
-            //file << "Test no. '" << test_counter << "' failed" << std::endl;
+            outs << "Test no. '" << test_counter << "' failed" << std::endl;
             test_failed++;
         }
         else
@@ -121,8 +121,7 @@ public:
 
         if (b <= a)
         {
-            std::cout << "Test no. '" << test_counter << "' failed" << std::endl;
-            //file << "Test no. '" << test_counter << "' failed" << std::endl;
+            outs << "Test no. '" << test_counter << "' failed" << std::endl;
             test_failed++;
         }
         else
@@ -141,8 +140,7 @@ public:
 
         if (a <= b)
         {
-            std::cout << "Test no. '" << test_counter << "' failed" << std::endl;
-            //file << "Test no. '" << test_counter << "' failed" << std::endl;
+            outs << "Test no. '" << test_counter << "' failed" << std::endl;
             test_failed++;
         }
         else
@@ -157,6 +155,7 @@ private:
     unsigned int test_failed;
     unsigned int test_passed;
     std::ofstream file;
+    std::stringstream outs;
 };
 
 #endif // JRTEST_H
