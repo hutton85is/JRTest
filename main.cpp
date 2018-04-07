@@ -86,15 +86,16 @@ int main()
         Test 'isgreater' function
     */
     // test 26
-    test.isgreater(1, 2);
+    test.isgreater(1, 2.5);
     // test 27
-    test.isgreater(2, 2);
+    test.isgreater(2, 1.8);
     // test 28
     test.isgreater(-5, 2);
     // test 29
     test.isgreater(100, 2);
     // test 30
     test.isgreater(-50, -70);
+
 
     return 0;
 }

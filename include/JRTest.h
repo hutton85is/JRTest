@@ -36,7 +36,6 @@ public:
         file.close();
     };
 
-
     /**
         Test if input T1 equals T2
     */
@@ -154,6 +153,7 @@ private:
     unsigned int test_counter;
     unsigned int test_failed;
     unsigned int test_passed;
+
     std::ofstream file;
     std::stringstream outs;
 };
