@@ -96,6 +96,24 @@ int main()
     // test 30
     test.isgreater(-50, -70);
 
+    /**
+        Test 'isarrayequal' function
+    */
+    int a[6] = {1,2,3,4,5,6};
+    int b[6] = {1,2,3,4,5,6};
+    string c[6] = {"ab", "tre", "fis", "kall"};
+    string d[6] = {"ab", "tre", "fis", "kall"};
+
+    // test 31
+    test.isarrayequal(a, b, 0, 5);
+    a[1] = -2;
+    // test 32
+    test.isarrayequal(a, b, 0, 4);
+    // test 33
+    test.isarrayequal(c, d, 0, 4);
+    d[0] = "russell";
+    // test 34
+    test.isarrayequal(c, d, 0, 4);
 
     return 0;
 }

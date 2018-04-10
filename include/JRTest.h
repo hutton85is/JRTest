@@ -148,13 +148,61 @@ public:
         }
     };
 
+    /**
+        Test if input array a is equal to input array b
+
+        *Note* There will be an ERROR if index is out of bounds
+    */
+    template<class T1, class T2>
+    void isarrayequal(T1 a, T2 b, unsigned int beg = 0, unsigned int en = 1)
+    {
+        test_counter++;
+
+        bool passed = true;
+
+        for (unsigned int i = beg; i <= en; i++)
+        {
+            std::cout << i << std::endl;
+            if (a[i] != b[i])
+            {
+                passed = false;
+                break;
+            }
+        }
+
+        if (passed)
+        {
+            test_passed++;
+        }
+        else
+        {
+            outs << "Test no. '" << test_counter << "' failed" << std::endl;
+            test_failed++;
+        }
+    };
+
 private:
 
+    /**
+        Store number of Total test's
+    */
     unsigned int test_counter;
+    /**
+        Store number of Failed test's
+    */
     unsigned int test_failed;
+    /**
+        Store number of Passed test's
+    */
     unsigned int test_passed;
 
+    /**
+        'file' is the error log file
+    */
     std::ofstream file;
+    /**
+        'outs' is the stringstream keeping the test result
+    */
     std::stringstream outs;
 };
 

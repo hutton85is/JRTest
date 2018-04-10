@@ -12,8 +12,10 @@ Test no. '23' failed
 Test no. '25' failed
 Test no. '26' failed
 Test no. '28' failed
+Test no. '32' failed
+Test no. '34' failed
 
 * * * SUMMARY * * *
-14 Failed
-16 Passed
-30 Total Test's
+16 Failed
+18 Passed
+34 Total Test's
